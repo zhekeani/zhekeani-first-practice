@@ -23,6 +23,7 @@ jobs:
 
   # Run npm test
   test:
+    needs: lint
     runs-on: ubuntu-latest
 
     steps:
@@ -40,6 +41,7 @@ jobs:
 
   # Deploy the application
   deploy:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
