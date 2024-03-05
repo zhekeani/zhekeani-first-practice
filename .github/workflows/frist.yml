@@ -40,7 +40,7 @@ jobs:
 
   # Deploy the application
   deploy:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
 
     steps:
       - name: Get code
